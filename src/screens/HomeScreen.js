@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React from 'react';
-import {inbox, outbox, file, group, setting} from '../assets';
+import {inbox, outbox, file, group, setting, edit} from '../assets';
 
 const Home = () => {
   return (
@@ -38,8 +38,37 @@ const Home = () => {
               borderColor: '#3AB4F2',
             }}
           >
+            <Image source={edit} />
+            <Text
+              style={{
+                color: '#3AB4F2',
+                fontSize: 15,
+                fontWeight: '700',
+                marginTop: 10,
+              }}
+            >
+              Tulis Pesan
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              alignItems: 'center',
+              width: 100,
+              height: 100,
+              borderWidth: 1,
+              borderRadius: 10,
+              borderColor: '#3AB4F2',
+            }}
+          >
             <Image source={inbox} />
-            <Text style={{color: '#3AB4F2', fontSize: 15, fontWeight: '700'}}>
+            <Text
+              style={{
+                color: '#3AB4F2',
+                fontSize: 15,
+                fontWeight: '700',
+                marginTop: 10,
+              }}
+            >
               Inbox
             </Text>
           </TouchableOpacity>
@@ -54,23 +83,15 @@ const Home = () => {
             }}
           >
             <Image source={outbox} />
-            <Text style={{color: '#3AB4F2', fontSize: 15, fontWeight: '700'}}>
+            <Text
+              style={{
+                color: '#3AB4F2',
+                fontSize: 15,
+                fontWeight: '700',
+                marginTop: 10,
+              }}
+            >
               Outbox
-            </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              alignItems: 'center',
-              width: 100,
-              height: 100,
-              borderWidth: 1,
-              borderRadius: 10,
-              borderColor: '#3AB4F2',
-            }}
-          >
-            <Image source={group} />
-            <Text style={{color: '#3AB4F2', fontSize: 15, fontWeight: '700'}}>
-              Disposisi
             </Text>
           </TouchableOpacity>
         </View>
@@ -91,8 +112,37 @@ const Home = () => {
               borderColor: '#3AB4F2',
             }}
           >
+            <Image source={group} />
+            <Text
+              style={{
+                color: '#3AB4F2',
+                fontSize: 15,
+                fontWeight: '700',
+                marginTop: 10,
+              }}
+            >
+              Disposisi
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              alignItems: 'center',
+              width: 100,
+              height: 100,
+              borderWidth: 1,
+              borderRadius: 10,
+              borderColor: '#3AB4F2',
+            }}
+          >
             <Image source={file} />
-            <Text style={{color: '#3AB4F2', fontSize: 15, fontWeight: '700'}}>
+            <Text
+              style={{
+                color: '#3AB4F2',
+                fontSize: 15,
+                fontWeight: '700',
+                marginTop: 10,
+              }}
+            >
               Cuti
             </Text>
           </TouchableOpacity>
@@ -107,7 +157,14 @@ const Home = () => {
             }}
           >
             <Image source={setting} />
-            <Text style={{color: '#3AB4F2', fontSize: 15, fontWeight: '700'}}>
+            <Text
+              style={{
+                color: '#3AB4F2',
+                fontSize: 15,
+                fontWeight: '700',
+                marginTop: 10,
+              }}
+            >
               Profile
             </Text>
           </TouchableOpacity>

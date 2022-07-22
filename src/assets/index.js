@@ -1,3 +1,4 @@
+export {default as edit} from './edit.png';
 export {default as inbox} from './inbox.png';
 export {default as outbox} from './outbox.png';
 export {default as setting} from './setting.png';
