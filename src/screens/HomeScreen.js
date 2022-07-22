@@ -14,11 +14,18 @@ const Home = () => {
     <SafeAreaView>
       <View style={{marginHorizontal: 16, marginTop: 20}}>
         <View>
-          <Text style={{fontWeight: '700', fontSize: 20, color: '#3AB4F2'}}>
+          <Text
+            style={{
+              fontWeight: '700',
+              fontSize: 20,
+              color: '#3AB4F2',
+              fontStyle: 'italic',
+            }}
+          >
             Welcome Back,
           </Text>
-          <Text style={{fontWeight: '700', fontSize: 20, color: '#3AB4F2'}}>
-            Gilang
+          <Text style={{fontWeight: '700', fontSize: 30, color: '#3AB4F2'}}>
+            Gilang Akram
           </Text>
         </View>
         <View
