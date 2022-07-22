@@ -12,16 +12,33 @@ import {leftArrow} from '../assets';
 const InboxScreen = ({navigation}) => {
   return (
     <SafeAreaView>
-      <View style={{marginHorizontal: 16}}>
-        <TouchableOpacity
-          style={{flexDirection: 'row', alignItems: 'center'}}
-          onPress={() => navigation.navigate('Home')}
+      <View>
+        <View
+          style={{
+            position: 'relative',
+            justifyContent: 'center',
+            flexDirection: 'row',
+            alignItems: 'center',
+            marginTop: 16,
+          }}
         >
-          <Image source={leftArrow} />
-          <Text style={{color: '#3AB4F2', fontSize: 20, fontWeight: '700'}}>
-            Back
-          </Text>
-        </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              position: 'absolute',
+              left: 16,
+            }}
+            onPress={() => navigation.goBack()}
+          >
+            <Image source={leftArrow} />
+          </TouchableOpacity>
+          <View>
+            <Text style={{fontWeight: '700', fontSize: 20, color: '#3AB4F2'}}>
+              Pesan Masuk
+            </Text>
+          </View>
+        </View>
       </View>
     </SafeAreaView>
   );
