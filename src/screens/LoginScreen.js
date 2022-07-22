@@ -43,7 +43,10 @@ const Login = ({navigation}) => {
           onChangeText={text => setValue({...value, password: text})}
           value={value.password}
         />
-        <TouchableOpacity style={styles.bottonSize}>
+        <TouchableOpacity
+          style={styles.bottonSize}
+          onPress={() => navigation.navigate('Home')}
+        >
           <Text style={styles.textButton}>Login</Text>
         </TouchableOpacity>
         <TouchableOpacity style={{marginTop: 15}}>
@@ -82,6 +85,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     paddingLeft: 20,
     paddingRight: 50,
+    color: 'blue',
   },
   bottonSize: {
     width: width / 1.3,
