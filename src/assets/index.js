@@ -6,3 +6,4 @@ export {default as file} from './file.png';
 export {default as group} from './group.png';
 export {default as leftArrow} from './leftArrow.png';
 export {default as employee} from './employee.png';
+export {default as camera} from './camera.png';
