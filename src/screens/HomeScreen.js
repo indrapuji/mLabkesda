@@ -9,7 +9,7 @@ import {
 import React from 'react';
 import {inbox, outbox, file, group, setting, edit} from '../assets';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <SafeAreaView>
       <View style={{marginHorizontal: 16, marginTop: 20}}>
@@ -44,6 +44,7 @@ const Home = () => {
               borderRadius: 10,
               borderColor: '#3AB4F2',
             }}
+            onPress={() => navigation.navigate('Write')}
           >
             <Image source={edit} />
             <Text
@@ -66,6 +67,7 @@ const Home = () => {
               borderRadius: 10,
               borderColor: '#3AB4F2',
             }}
+            onPress={() => navigation.navigate('Inbox')}
           >
             <Image source={inbox} />
             <Text
@@ -88,6 +90,7 @@ const Home = () => {
               borderRadius: 10,
               borderColor: '#3AB4F2',
             }}
+            onPress={() => navigation.navigate('Outbox')}
           >
             <Image source={outbox} />
             <Text
@@ -118,6 +121,7 @@ const Home = () => {
               borderRadius: 10,
               borderColor: '#3AB4F2',
             }}
+            onPress={() => navigation.navigate('Disposisi')}
           >
             <Image source={group} />
             <Text
@@ -140,6 +144,7 @@ const Home = () => {
               borderRadius: 10,
               borderColor: '#3AB4F2',
             }}
+            onPress={() => navigation.navigate('Cuti')}
           >
             <Image source={file} />
             <Text
@@ -154,6 +159,7 @@ const Home = () => {
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
+            onPress={() => navigation.navigate('Profile')}
             style={{
               alignItems: 'center',
               width: 100,
